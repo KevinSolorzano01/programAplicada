@@ -9,6 +9,6 @@ def buscar_pr(a,b):
                 break
         if contador ==2: 
             print(f'{i} es un primo')
-a=int(input('digite el numero inferior del rango '))
-b=int(input('digite el numero superior del rango '))
+a=int(input('ingrese el numero inferior del rango '))
+b=int(input('ingrese el numero superior del rango '))
 buscar_pr(a,b)
