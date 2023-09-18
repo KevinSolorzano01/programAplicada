@@ -1,4 +1,5 @@
-#muestra los numero primos que hay en una rango de numeros ,tambien el tiempo en que se tarda en hacer esto en valores de milisegundos
+#muestra los numeros primos que hay en una rango de numeros ,tambien el tiempo en que se tarda en hacer esto en valores de milisegundos """
+
 import time
 inicio= time.time()#toma el valor del tiempo en que inicia
 time.sleep(1)
