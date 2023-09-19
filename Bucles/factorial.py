@@ -1,4 +1,5 @@
-"""Es un bucle infinito while """
+"""Este código es un bucle infinito que le pide al usuario 
+que introduzca un número positivo y luego calcula el factorial de ese número si es un entero positivo"""
 
 while True:
     valor =(input("introducion un numero positivo: "))
