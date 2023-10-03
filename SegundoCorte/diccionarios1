@@ -1,1 +1,40 @@
+sensors =  {"living room": 21, "kitchen": 23, "bedroom": 20, "pantry": 22} # se crea el diccionario sensores
+num_cameras = {"backyard": 6,  "garage": 2, "driveway": 1} 
+
+print(sensors)   # se imprime el diccionario sensores con sus respectivas palabras clave    
+print(num_cameras) 
+translations = {"mountain": "orod", "bread": "bass", "friend": "mellon", "horse": "roch" } # se crea el diccionario transletions 
+print(translations)
+
+#Verifiying an error:
+listaa = [1, 2, 4, 8, 16]
+powers = {listaa: 2}
+print(powers)    # se genera un error, por que un diccionario no puede contener una lista como palabra clave 
+
+children = {"von Trapp": ["Johannes", "Rosmarie", "Eleonore"] , "Corleone": ["Sonny", "Fredo", "Michael"]}  # Se crea un diccionario  en el que el valor de la clave es una lista 
+print(children)
+
+my_empty_dictionary = {} #Se crea un diccionario vacio y se imprime
+print(my_empty_dictionary)
+
+menu = {"oatmeal": 3, "avocado toast": 6, "carrot juice": 5, "blueberry muffin": 2} #se crea el diccionario Menu
+print("Before: ", menu)              # imprime el diccionario menu despues de el string Before 
+menu["cheesecake"] = 8               # Se agregó el elemento cheesecake con el valor 8
+print("After", menu)                 # Se imprime el diccionario menu con el nuevo elemento despues del string After 
+animals_in_zoo = {"dinosaurs": 0}    # se crea el diccionario animals_in_zoo
+animals_in_zoo = {"dinosaurs": 0}
+animals_in_zoo = {"horses": 2}       # Se actualiza el contenido del diccionario 
+print(animals_in_zoo)                # se imprime el diccionario actualizado 
+
+# Agregar multiples claves 
+sensors = {"living room": 21, "kitchen": 23, "bedroom": 20}
+print("Before", sensors)
+
+
+# If we wanted to add 3 new rooms, we could use:
+sensors.update({"pantry": 22, "guest room": 25, "patio": 34})
+print("After", sensors)
+
+
+
 
