@@ -31,9 +31,56 @@ sensors = {"living room": 21, "kitchen": 23, "bedroom": 20}
 print("Before", sensors)
 
 
-# If we wanted to add 3 new rooms, we could use:
+# Si quisiéramos añadir 3 nuevas habitaciones, podríamos utilizar:
+
 sensors.update({"pantry": 22, "guest room": 25, "patio": 34})
 print("After", sensors)
+
+user_ids = {"teraCoder": 9018293, "proProgrammer": 119238}
+print(user_ids)
+user_ids.update({"theLooper": 138475, "stringQueen": 85739}) # se agrega un usuario y su ids
+print(user_ids)
+
+
+## Sobrescribir valores ##
+#Sabemos que podemos agregar una clave usando la siguiente sintaxis:
+menu["banana"] = 3 
+menu = {"oatmeal": 3, "avocado toast": 6, "carrot juice": 5, "blueberry muffin": 2}
+print("Before: ", menu)
+menu["oatmeal"] = 5
+print("After", menu)  
+
+
+## Observe que el valor de "avena" ahora ha cambiado a 5.
+
+oscar_winners = {"Best Picture": "La La Land", "Best Actor": "Casey Affleck", "Best Actress": "Emma Stone", "Animated Feature": "Zootopia"}
+print("Before", oscar_winners)
+print()
+oscar_winners.update({"Supporting Actress": "Viola Davis"})
+print("After1", oscar_winners)
+print()
+oscar_winners["Best Picture"] = "Moonlight"
+print("After2", oscar_winners)
+
+
+###Comprensiones de dictado
+#Digamos que tenemos dos listas que queremos combinar en una
+#diccionario, como una lista de estudiantes y una lista de sus alturas,
+#en pulgadas:
+
+names = ['Jenny', 'Alexus', 'Sam', 'Grace']
+heights = [61, 70, 67, 64]
+
+#Python te permite crear un diccionario usando
+# un dictado de comprensión, con esta sintaxis:
+
+zipStudents = zip(names, heights)
+print("zipStudents: ", zipStudents)
+
+#Python te permite crear un diccionario usando
+# un dictado de comprensión, con esta sintaxis:
+
+# #zip() combina dos listas en un iterador de tuplas con los elementos de la lista emparejados. Esta comprensión del dictado
 
 
 
