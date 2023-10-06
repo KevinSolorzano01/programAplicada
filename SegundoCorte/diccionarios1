@@ -77,10 +77,30 @@ heights = [61, 70, 67, 64]
 zipStudents = zip(names, heights)
 print("zipStudents: ", zipStudents)
 
-#Python te permite crear un diccionario usando
-# un dictado de comprensión, con esta sintaxis:
+students = {key:value for key, value in zip(names, heights)}
+students is now {'Jenny': 61, 'Alexus': 70, 'Sam': 67, 'Grace': 64}
+print(students)
 
 # #zip() combina dos listas en un iterador de tuplas con los elementos de la lista emparejados. Esta comprensión del dictado
+
+drinks = ["espresso", "chai", "decaf", "drip"]
+caffeine = [64, 40, 0, 120]
+
+zipped_drinks = zip(drinks, caffeine)
+print(zipped_drinks)
+
+drinks_to_caffeine = {key:value for key, value in zipped_drinks}
+print(drinks_to_caffeine)
+
+songs = ["Like a Rolling Stone", "Satisfaction", "Imagine", "What's Going On", "Respect", "Good Vibrations"]
+playcounts = [78, 29, 44, 21, 89, 5]
+plays = {key:value for key, value in zip(songs, playcounts)} # crea un diccionario, donde las claves son cada elemento de una tupla y le asigna los valores de otra tupla como valores de la clave  
+print(plays)
+plays.update({"Purple Haze": 1})
+plays.update({"Respect": 94})  # Se pueden agregar dos elementos al diccionario creado normalmente con update  
+print("After: ", plays)
+library = {"The Best Songs": plays, "Sunday Feelings": {}} #Se crea un diccionario que tiene como valores clave dos diccionarios, el que previamente se habia creado y uno vacio.
+print(library) 
 
 
 
