@@ -1,0 +1,45 @@
+class Circulo:
+    pi = 3.14
+    def __init__(self, diametro):
+        print('nuevo diametro del circulo: {d}'.format(d=diametro))
+        self.radio = diametro/2
+    def circunferencia(self):
+        return 2*self.pi*self.radio
+    def area(self):
+        return self.pi*self.radio**2
+
+class Rectangulo:
+    def __init__(self, base, altura):
+        print('base: {b},altura: {h}'.format(b=base,h=altura))
+        self.base = base
+        self.altura = altura
+    def perimetro(self):
+        return 2*self.base+2*self.altura
+    def area(self):
+        return  self.base*self.altura
+
+class Triangulo:
+    def __init__(self, base,altura ):
+        print('base: {b}, altura: {h}'.format(b=base,h=altura))
+        self.base = base
+        self.altura = altura
+        self.lad1 = (((base/2)**2) + (altura)**2)**0.5 
+        self.lad2 = (((base/2)**2) + (altura)**2)**0.5 
+    def perimetro(self):
+        return self.base+self.lad1+self.lad2
+    def area(self):
+        return  (self.base*self.altura)/2
+
+teaching_table = Circulo(22)
+print(teaching_table.circumferencia())
+print(teaching_table.area())
+
+
+board = Rectangulo(4,12)
+print(board.perimetro())
+print(board.area())
+
+
+rule = Triangulo(12,18)
+print(rule.perimetro())
+print(rule.area())
